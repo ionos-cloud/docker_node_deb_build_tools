@@ -1,7 +1,5 @@
 FROM debian:latest
  
-RUN apt-get update
-
 RUN rm -f /etc/apt/apt.conf.d/docker-clean
 
 RUN apt-get update && apt-get -y --no-upgrade --no-remove install curl git g++ build-essential devscripts fakeroot
