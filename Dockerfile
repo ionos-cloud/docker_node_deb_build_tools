@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:latest
  
 RUN rm -f /etc/apt/apt.conf.d/docker-clean
 
