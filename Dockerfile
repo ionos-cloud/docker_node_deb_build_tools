@@ -2,7 +2,7 @@ FROM debian:latest
 
 RUN rm -f /etc/apt/apt.conf.d/docker-clean
 
-RUN apt-get update && apt-get -y --no-upgrade --no-remove --no-install-recommends install curl gnupg ca-certificates
+RUN apt-get update && apt-get -y --no-upgrade --no-remove --no-install-recommends install curl dput gnupg ca-certificates
 
 RUN curl -skS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 
