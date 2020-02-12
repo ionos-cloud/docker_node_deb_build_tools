@@ -10,7 +10,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 
 RUN apt-get update && apt-get -y --no-install-recommends --no-upgrade --no-remove install debhelper yarn net-tools git g++ build-essential devscripts fakeroot
 
-RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x  | bash -
 
 RUN apt-get -y install nodejs
 
